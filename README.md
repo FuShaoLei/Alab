@@ -1,6 +1,6 @@
-# Alab
+# Alab-这只是个实验性质的仓库
 
-## 如何使用
+## How to use
 
 **Step 1.** Add the JitPack repository to your build file
 
