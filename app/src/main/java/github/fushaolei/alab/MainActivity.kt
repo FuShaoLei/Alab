@@ -1,21 +1,19 @@
 package github.fushaolei.alab
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.util.Log
-import github.fushaolei.lib.test.Alab
+import android.content.Intent
+import github.fushaolei.alab.module.RecyclerActivity
+import github.fushaolei.lib.test.base.ABaseActivity
 import github.fushaolei.lib.test.utils.ALog
-import github.fushaolei.lib.test.utils.AToast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.act_main.*
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        ALog.show("hello log world!")
-        tv_text.setOnClickListener {
-            AToast.show("you click textview ！！！")
+class MainActivity : ABaseActivity() {
+    override fun initView() {
+        ALog.show("MainActivity initView(￣▽￣)")
+        btn_recyclerview.setOnClickListener {
+            startActivity(Intent(this, RecyclerActivity::class.java))
         }
     }
+
+    override fun getLayoutId(): Int = R.layout.act_main
+
 }
