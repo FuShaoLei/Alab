@@ -45,4 +45,10 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.1.0'
 
     compileOnly 'androidx.recyclerview:recyclerview:1.1.0'
+
+    // kotlin + 协程
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.0.2'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
 }

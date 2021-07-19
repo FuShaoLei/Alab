@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="github.fushaolei.alab">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -19,6 +20,7 @@
         </activity>
         <activity android:name=".module.ARecyclerActivity" />
         <activity android:name=".module.ACacheActivity"/>
+        <activity android:name=".module.ARetrofitActivity"/>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import github.fushaolei.alab.module.ACacheActivity
 import github.fushaolei.alab.module.ARecyclerActivity
+import github.fushaolei.alab.module.ARetrofitActivity
 import github.fushaolei.lib.test.base.ABaseActivity
 import github.fushaolei.lib.test.base.ARecyclerAdapter
 import github.fushaolei.lib.test.base.ARecyclerViewHolder
@@ -17,7 +18,8 @@ import kotlinx.android.synthetic.main.act_main.*
 class MainActivity : ABaseActivity() {
     private val mContainer = arrayListOf<Item<*>>(
         Item("ARecyclerAdapter测试", ARecyclerActivity::class.java),
-        Item("ACache测试", ACacheActivity::class.java)
+        Item("ACache测试", ACacheActivity::class.java),
+        Item("Retrofit协程测试", ARetrofitActivity::class.java)
     )
 
     override fun initView() {
