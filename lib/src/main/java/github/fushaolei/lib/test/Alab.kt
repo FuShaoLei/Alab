@@ -5,6 +5,10 @@ import android.app.Application
 import android.content.Context
 import java.lang.RuntimeException
 
+/**
+ * 初始化类
+ * Created by fushaolei on 2021/07/15
+ */
 @SuppressLint("StaticFieldLeak")
 object Alab {
     private var context: Context? = null

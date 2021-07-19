@@ -6,6 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Recyclerview Adapter基类
+ * Created by fushaolei on 2021/07/15
+ */
 abstract class ARecyclerAdapter<T, VH : ARecyclerViewHolder>(var dataList: MutableList<T>) :
     RecyclerView.Adapter<VH>() {
 

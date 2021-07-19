@@ -4,6 +4,7 @@ import android.util.Log
 
 /**
  * Log工具类
+ * Created by fushaolei on 2021/07/15
  */
 object ALog {
     private var isOpen = true
@@ -12,14 +13,31 @@ object ALog {
     fun show(text: String) {
         if (!isOpen) return
         var ts = getTargetStackTraceElement()
-        Log.e(tag, "┌────────────────────────────────────────────")
+        Log.e(tag, "┌──────────────────────────────────────────────────")
         Log.e(tag, "│ (${ts?.fileName}:${ts?.lineNumber})")
-        Log.e(tag, "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")
+        Log.e(tag, "├──────────────────────────────────────────────────")
         Log.e(tag, "│ $text")
-        Log.e(tag, "└────────────────────────────────────────────")
+        Log.e(tag, "└──────────────────────────────────────────────────")
+    }
+
+    /**
+     * 关闭
+     */
+    fun close() {
+        isOpen = false
+    }
+
+    /**
+     * 打开
+     */
+    fun open() {
+        isOpen = true
     }
 
 
+    /**
+     * 获取堆栈信息，此处参考的是鸿洋大佬的文章
+     */
     private fun getTargetStackTraceElement(): StackTraceElement? {
         var targetStackTrace: StackTraceElement? = null
         var shouldTrace = false

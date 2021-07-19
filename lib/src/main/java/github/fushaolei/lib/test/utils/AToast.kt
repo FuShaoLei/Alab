@@ -5,6 +5,7 @@ import github.fushaolei.lib.test.Alab
 
 /**
  * Toast工具类
+ * Created by fushaolei on 2021/07/15
  */
 object AToast {
     fun show(text: String) {
