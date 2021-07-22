@@ -54,18 +54,20 @@ abstract class ARecyclerAdapter<T, VH : ARecyclerViewHolder>(var dataList: Mutab
     /**
      * 替换数据
      */
-    fun replaceData(datas: MutableList<T>) {
+    fun replaceData(datas: List<T>) {
         if (datas != dataList) {
             dataList.clear()
             dataList.addAll(datas)
+            notifyDataSetChanged()
         }
     }
 
     /**
      * 增添数据
      */
-    fun addData(datas: MutableList<T>) {
+    fun addData(datas: List<T>) {
         dataList.addAll(datas)
+        notifyDataSetChanged()
     }
 
     /**

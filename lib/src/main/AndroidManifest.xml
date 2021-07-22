@@ -2,4 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="github.fushaolei.lib">
 
+    <application>
+        <activity
+            android:name=".test.img.AImagePickerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    </application>
 </manifest>
