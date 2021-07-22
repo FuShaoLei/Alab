@@ -15,11 +15,11 @@ import kotlinx.android.synthetic.main.act_main.*
 
 class MainActivity : ABaseActivity() {
     private val mContainer = arrayListOf<Item<*>>(
-        Item("ARecyclerAdapter测试", ARecyclerActivity::class.java),
-        Item("ACache测试", ACacheActivity::class.java),
-        Item("Retrofit协程测试", ARetrofitActivity::class.java),
-        Item("Permission测试", APermissionActivity::class.java),
-        Item("ImageSelector测试", AImageTestActivity::class.java)
+        Item("ARecyclerAdapter测试", RecyclerViewTest::class.java),
+        Item("ACache测试", CacheTest::class.java),
+        Item("Retrofit协程测试", RetrofitTest::class.java),
+        Item("Permission测试", PermissionTest::class.java),
+        Item("ImageSelector测试", ImagePickerTest::class.java)
     )
 
     override fun initView() {

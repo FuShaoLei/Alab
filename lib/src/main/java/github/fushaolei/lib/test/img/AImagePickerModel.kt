@@ -2,7 +2,7 @@ package github.fushaolei.lib.test.img
 
 import android.content.Context
 import android.provider.MediaStore
-import github.fushaolei.lib.test.entitiy.Image
+import github.fushaolei.lib.test.entitiy.AlabImage
 import kotlin.concurrent.thread
 
 object AImagePickerModel {
@@ -20,7 +20,7 @@ object AImagePickerModel {
                 null,
                 MediaStore.Images.Media.DATE_ADDED)
 
-            var images = ArrayList<Image>()
+            var images = ArrayList<AlabImage>()
 
             while (mCursor?.moveToNext() == true) {
 
@@ -33,7 +33,7 @@ object AImagePickerModel {
                     mCursor.getColumnIndex(MediaStore.Images.Media.DATE_ADDED));
                 val uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI.buildUpon()
                     .appendPath(id.toString()).build()
-                images.add(Image(path, time, name, uri))
+                images.add(AlabImage(path, time, name, uri))
 
             }
             mCursor?.close()
@@ -44,6 +44,6 @@ object AImagePickerModel {
     }
 
     interface DataCallback {
-        fun onSuccess(images: ArrayList<Image>)
+        fun onSuccess(alabImages: ArrayList<AlabImage>)
     }
 }

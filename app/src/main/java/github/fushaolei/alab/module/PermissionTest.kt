@@ -9,7 +9,7 @@ import github.fushaolei.lib.test.utils.APermission
 import github.fushaolei.lib.test.utils.AToast
 import kotlinx.android.synthetic.main.act_permission.*
 
-class APermissionActivity : ABaseActivity() {
+class PermissionTest : ABaseActivity() {
     override fun initView() {
         btn_get_permission.setOnClickListener {
             APermission.request(this, Manifest.permission.CALL_PHONE) { allGranted, denieList ->

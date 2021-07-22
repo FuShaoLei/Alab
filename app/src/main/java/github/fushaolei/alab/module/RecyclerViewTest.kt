@@ -13,7 +13,7 @@ import github.fushaolei.lib.test.utils.ALog
 import github.fushaolei.lib.test.utils.AToast
 import kotlinx.android.synthetic.main.act_recyclerview.*
 
-class ARecyclerActivity : ABaseActivity() {
+class RecyclerViewTest : ABaseActivity() {
     private val dataList = arrayListOf<Msg>(
         Msg(R.drawable.ic_launcher_background, "任我行", "天涯孤影任我行"),
         Msg(R.drawable.ic_launcher_foreground, "令狐冲", "天涯孤影任我行"),

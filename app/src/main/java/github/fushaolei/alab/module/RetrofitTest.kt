@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.act_retrofit.*
 import kotlinx.coroutines.*
 import retrofit2.http.GET
 
-class ARetrofitActivity : ABaseActivity() {
+class RetrofitTest : ABaseActivity() {
     // 随机诗词api:https://v1.jinrishici.com/all.json
 
     private val myScope = AScope.getScope()

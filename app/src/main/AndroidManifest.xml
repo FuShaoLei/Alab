@@ -21,11 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".module.ARecyclerActivity" />
-        <activity android:name=".module.ACacheActivity" />
-        <activity android:name=".module.ARetrofitActivity" />
-        <activity android:name=".module.APermissionActivity" />
-        <activity android:name=".module.AImageTestActivity" />
+        <activity android:name=".module.RecyclerViewTest" />
+        <activity android:name=".module.CacheTest" />
+        <activity android:name=".module.RetrofitTest" />
+        <activity android:name=".module.PermissionTest" />
+        <activity android:name=".module.ImagePickerTest" />
 
     </application>
 

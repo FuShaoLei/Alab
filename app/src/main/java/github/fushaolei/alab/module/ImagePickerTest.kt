@@ -8,7 +8,7 @@ import github.fushaolei.lib.test.utils.APermission
 import github.fushaolei.lib.test.utils.AToast
 import kotlinx.android.synthetic.main.act_image_selector.*
 
-class AImageTestActivity : ABaseActivity() {
+class ImagePickerTest : ABaseActivity() {
     override fun initView() {
         APermission.request(this,
             Manifest.permission.WRITE_EXTERNAL_STORAGE) { allGranted, denieList ->

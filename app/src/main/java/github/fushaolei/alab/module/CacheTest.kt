@@ -6,7 +6,7 @@ import github.fushaolei.lib.test.utils.ACache
 import github.fushaolei.lib.test.utils.AToast
 import kotlinx.android.synthetic.main.act_cache.*
 
-class ACacheActivity : ABaseActivity() {
+class CacheTest : ABaseActivity() {
     private val TAG = "key"
     override fun initView() {
         btn_save.setOnClickListener {
