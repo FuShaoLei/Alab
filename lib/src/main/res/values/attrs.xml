@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--styleable-->
+    <declare-styleable name="ATitleBar">
+        <attr name="BackgroundColor" format="reference"/>
+        <attr name="CenterText" format="string" />
+        <attr name="RightText" format="string" />
+
+
+        <attr name="CenterTextColor" format="color"/>
+        <attr name="RightTextColor" format="color"/>
+
+    </declare-styleable>
+</resources>

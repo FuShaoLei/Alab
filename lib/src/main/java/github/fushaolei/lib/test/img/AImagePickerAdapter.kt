@@ -1,6 +1,5 @@
 package github.fushaolei.lib.test.img
 
-import android.media.Image
 import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
@@ -44,10 +43,10 @@ class AImagePickerAdapter(dataList: MutableList<AlabImage>) :
 
         holder.itemView.setOnClickListener {
             if (selectList?.contains(item) == true) {
-                holder.status.setImageResource(R.drawable.ic_un_select)
+                holder.status.setImageResource(R.drawable.alab_ic_un_select)
                 selectList?.remove(item)
             } else {
-                holder.status.setImageResource(R.drawable.ic_select)
+                holder.status.setImageResource(R.drawable.alab_ic_select)
                 selectList?.add(item)
             }
         }

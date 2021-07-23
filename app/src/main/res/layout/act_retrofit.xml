@@ -5,6 +5,12 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <github.fushaolei.lib.test.weight.ATitleBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_bars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:CenterText="retrofit测试" />
+
     <Button
         android:id="@+id/btn_update"
         android:layout_width="match_parent"

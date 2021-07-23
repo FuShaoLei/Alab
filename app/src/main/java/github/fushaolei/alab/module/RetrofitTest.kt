@@ -1,10 +1,13 @@
 package github.fushaolei.alab.module
 
+import android.view.View
 import github.fushaolei.alab.R
 import github.fushaolei.lib.test.base.ABaseActivity
 import github.fushaolei.lib.test.utils.AScope
 import github.fushaolei.lib.test.utils.ALog
 import github.fushaolei.lib.test.utils.ARetrofit
+import github.fushaolei.lib.test.utils.AToast
+import github.fushaolei.lib.test.weight.ATitleBar
 import kotlinx.android.synthetic.main.act_retrofit.*
 import kotlinx.coroutines.*
 import retrofit2.http.GET
@@ -28,8 +31,18 @@ class RetrofitTest : ABaseActivity() {
                 tv_text.text = getP.content
 
             }
-
         }
+        title_bars.setOnLeftClickListener(object :ATitleBar.OnLeftClickListener{
+            override fun onLeftClick(v: View?) {
+                finish()
+            }
+        })
+        title_bars.setOnCenterClickListener(object :ATitleBar.OnCenterClickListener{
+            override fun onTitleClick(v: View?) {
+                AToast.show("你点击了标题栏！")
+            }
+
+        })
     }
 
     override fun getLayoutId(): Int {
