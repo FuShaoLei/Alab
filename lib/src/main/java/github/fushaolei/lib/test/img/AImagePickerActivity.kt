@@ -25,21 +25,26 @@ class AImagePickerActivity : ABaseActivity() {
 
         AImagePickerModel.loadImage(this, object : AImagePickerModel.DataCallback {
             override fun onSuccess(alabImages: ArrayList<AlabImage>) {
-                alabImages.forEach {
-                    ALog.show(it.toString())
-                }
                 adapter = AImagePickerAdapter(alabImages)
                 rv_image.layoutManager = lm
                 rv_image.adapter = adapter
-
             }
         })
 
         tv_confirm.setOnClickListener {
             var dataList = adapter.getImageList()
+
+
+            var pathList = ArrayList<String>()
             dataList?.forEach {
-                ALog.show("选中的图片信息：${it.toString()}")
+                pathList.add(it.path)
             }
+
+
+            var intent = Intent()
+            intent.putStringArrayListExtra(AImagePicker.SELECTED_IMG,pathList)
+            setResult(RESULT_OK, intent)
+            finish()
         }
 
 
@@ -50,9 +55,9 @@ class AImagePickerActivity : ABaseActivity() {
     }
 
     companion object {
-        fun openActivity(activity: Activity) {
+        fun openActivity(activity: Activity, requestCode: Int) {
             var intent = Intent(activity, AImagePickerActivity::class.java)
-            activity.startActivity(intent)
+            activity.startActivityForResult(intent, requestCode)
         }
     }
 }
