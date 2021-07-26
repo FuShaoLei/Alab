@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.mvp
+package github.fushaolei.lib.mvp
 
 abstract class AMBasePresenter<V : AMBaseView> {
     protected var baseView: AMBaseView? = null

@@ -1,16 +1,11 @@
-package github.fushaolei.lib.test.img
+package github.fushaolei.lib.img
 
 import android.app.Activity
 import android.content.Intent
-import android.view.View
-import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
 import github.fushaolei.lib.R
-import github.fushaolei.lib.test.base.ABaseActivity
-import github.fushaolei.lib.test.base.ARecyclerAdapter
-import github.fushaolei.lib.test.entitiy.AlabImage
-import github.fushaolei.lib.test.utils.ALog
-import github.fushaolei.lib.test.utils.AToast
+import github.fushaolei.lib.base.ABaseActivity
+import github.fushaolei.lib.entitiy.AlabImage
 import kotlinx.android.synthetic.main.alab_act_image_selector.*
 
 /**

@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.img
+package github.fushaolei.lib.img
 
 import android.app.Activity
 
@@ -9,6 +9,6 @@ object AImagePicker {
     val SELECTED_IMG = "selected_img"
 
     fun open(activity: Activity,requestCode:Int) {
-        AImagePickerActivity.openActivity(activity,requestCode)
+        AImagePickerActivity.openActivity(activity, requestCode)
     }
 }

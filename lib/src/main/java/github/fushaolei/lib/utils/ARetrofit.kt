@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.utils
+package github.fushaolei.lib.utils
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

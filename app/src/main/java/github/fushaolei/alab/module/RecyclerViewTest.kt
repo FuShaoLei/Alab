@@ -6,11 +6,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import github.fushaolei.alab.R
-import github.fushaolei.lib.test.base.ABaseActivity
-import github.fushaolei.lib.test.base.ARecyclerAdapter
-import github.fushaolei.lib.test.base.ARecyclerViewHolder
-import github.fushaolei.lib.test.utils.ALog
-import github.fushaolei.lib.test.utils.AToast
+import github.fushaolei.lib.base.ABaseActivity
+import github.fushaolei.lib.base.ARecyclerAdapter
+import github.fushaolei.lib.base.ARecyclerViewHolder
+import github.fushaolei.lib.utils.AToast
 import kotlinx.android.synthetic.main.act_recyclerview.*
 
 class RecyclerViewTest : ABaseActivity() {

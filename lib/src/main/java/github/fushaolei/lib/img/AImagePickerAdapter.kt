@@ -1,13 +1,13 @@
-package github.fushaolei.lib.test.img
+package github.fushaolei.lib.img
 
 import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import github.fushaolei.lib.R
-import github.fushaolei.lib.test.Alab
-import github.fushaolei.lib.test.base.ARecyclerAdapter
-import github.fushaolei.lib.test.base.ARecyclerViewHolder
-import github.fushaolei.lib.test.entitiy.AlabImage
+import github.fushaolei.lib.Alab
+import github.fushaolei.lib.base.ARecyclerAdapter
+import github.fushaolei.lib.base.ARecyclerViewHolder
+import github.fushaolei.lib.entitiy.AlabImage
 import java.util.ArrayList
 
 class AImagePickerAdapter(dataList: MutableList<AlabImage>) :

@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.base
+package github.fushaolei.lib.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

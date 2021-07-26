@@ -26,6 +26,7 @@
         <activity android:name=".module.RetrofitTest" />
         <activity android:name=".module.PermissionTest" />
         <activity android:name=".module.ImagePickerTest" />
+        <activity android:name=".module.HttpTest" />
 
     </application>
 

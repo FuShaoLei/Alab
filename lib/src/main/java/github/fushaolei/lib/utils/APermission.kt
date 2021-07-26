@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.utils
+package github.fushaolei.lib.utils
 
 import android.content.pm.PackageManager
 import androidx.fragment.app.Fragment

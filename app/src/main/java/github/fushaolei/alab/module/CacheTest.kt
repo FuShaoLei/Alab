@@ -1,9 +1,9 @@
 package github.fushaolei.alab.module
 
 import github.fushaolei.alab.R
-import github.fushaolei.lib.test.base.ABaseActivity
-import github.fushaolei.lib.test.utils.ACache
-import github.fushaolei.lib.test.utils.AToast
+import github.fushaolei.lib.base.ABaseActivity
+import github.fushaolei.lib.utils.ACache
+import github.fushaolei.lib.utils.AToast
 import kotlinx.android.synthetic.main.act_cache.*
 
 class CacheTest : ABaseActivity() {

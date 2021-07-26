@@ -1,6 +1,6 @@
-package github.fushaolei.lib.test.mvp
+package github.fushaolei.lib.mvp
 
-import github.fushaolei.lib.test.base.ABaseActivity
+import github.fushaolei.lib.base.ABaseActivity
 
 /**
  * MVP Activity基类

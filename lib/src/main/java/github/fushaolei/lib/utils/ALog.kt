@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.utils
+package github.fushaolei.lib.utils
 
 import android.util.Log
 

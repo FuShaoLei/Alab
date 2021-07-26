@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.base
+package github.fushaolei.lib.base
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.weight
+package github.fushaolei.lib.weight
 
 import android.content.Context
 import android.util.AttributeSet

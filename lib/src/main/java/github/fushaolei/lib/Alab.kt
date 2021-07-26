@@ -1,7 +1,6 @@
-package github.fushaolei.lib.test
+package github.fushaolei.lib
 
 import android.annotation.SuppressLint
-import android.app.Application
 import android.content.Context
 import java.lang.RuntimeException
 
@@ -22,7 +21,7 @@ object Alab {
     }
 
     fun init(context: Context) {
-        if (this.context != null) return
-        this.context = context.applicationContext
+        if (Alab.context != null) return
+        Alab.context = context.applicationContext
     }
 }

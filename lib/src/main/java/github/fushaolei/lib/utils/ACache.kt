@@ -1,8 +1,8 @@
-package github.fushaolei.lib.test.utils
+package github.fushaolei.lib.utils
 
 import android.content.Context
 import android.content.SharedPreferences
-import github.fushaolei.lib.test.Alab
+import github.fushaolei.lib.Alab
 
 /**
  * SharedPreferences缓存工具类

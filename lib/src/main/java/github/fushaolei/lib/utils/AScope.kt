@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.utils
+package github.fushaolei.lib.utils
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

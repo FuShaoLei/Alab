@@ -1,7 +1,7 @@
-package github.fushaolei.lib.test.utils
+package github.fushaolei.lib.utils
 
 import android.widget.Toast
-import github.fushaolei.lib.test.Alab
+import github.fushaolei.lib.Alab
 
 /**
  * Toast工具类

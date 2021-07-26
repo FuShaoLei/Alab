@@ -1,8 +1,8 @@
-package github.fushaolei.lib.test.img
+package github.fushaolei.lib.img
 
 import android.content.Context
 import android.provider.MediaStore
-import github.fushaolei.lib.test.entitiy.AlabImage
+import github.fushaolei.lib.entitiy.AlabImage
 import kotlin.concurrent.thread
 
 object AImagePickerModel {

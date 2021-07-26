@@ -1,6 +1,5 @@
-package github.fushaolei.lib.test.base
+package github.fushaolei.lib.base
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

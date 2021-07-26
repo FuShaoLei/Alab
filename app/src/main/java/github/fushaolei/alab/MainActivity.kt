@@ -7,10 +7,10 @@ import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import github.fushaolei.alab.module.*
-import github.fushaolei.lib.test.base.ABaseActivity
-import github.fushaolei.lib.test.base.ARecyclerAdapter
-import github.fushaolei.lib.test.base.ARecyclerViewHolder
-import github.fushaolei.lib.test.utils.ALog
+import github.fushaolei.lib.base.ABaseActivity
+import github.fushaolei.lib.base.ARecyclerAdapter
+import github.fushaolei.lib.base.ARecyclerViewHolder
+import github.fushaolei.lib.utils.ALog
 import kotlinx.android.synthetic.main.act_main.*
 
 class MainActivity : ABaseActivity() {
@@ -19,7 +19,8 @@ class MainActivity : ABaseActivity() {
         Item("ACache测试", CacheTest::class.java),
         Item("Retrofit协程测试", RetrofitTest::class.java),
         Item("Permission测试", PermissionTest::class.java),
-        Item("ImageSelector测试", ImagePickerTest::class.java)
+        Item("ImageSelector测试", ImagePickerTest::class.java),
+        Item("Http测试", HttpTest::class.java)
     )
 
     override fun initView() {

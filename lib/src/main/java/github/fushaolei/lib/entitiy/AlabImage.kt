@@ -1,4 +1,4 @@
-package github.fushaolei.lib.test.entitiy
+package github.fushaolei.lib.entitiy
 
 import android.net.Uri
 

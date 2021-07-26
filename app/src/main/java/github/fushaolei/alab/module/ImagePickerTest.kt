@@ -3,11 +3,11 @@ package github.fushaolei.alab.module
 import android.Manifest
 import android.content.Intent
 import github.fushaolei.alab.R
-import github.fushaolei.lib.test.base.ABaseActivity
-import github.fushaolei.lib.test.img.AImagePicker
-import github.fushaolei.lib.test.utils.ALog
-import github.fushaolei.lib.test.utils.APermission
-import github.fushaolei.lib.test.utils.AToast
+import github.fushaolei.lib.base.ABaseActivity
+import github.fushaolei.lib.img.AImagePicker
+import github.fushaolei.lib.utils.ALog
+import github.fushaolei.lib.utils.APermission
+import github.fushaolei.lib.utils.AToast
 import kotlinx.android.synthetic.main.act_image_selector.*
 
 class ImagePickerTest : ABaseActivity() {
