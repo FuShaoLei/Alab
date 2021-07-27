@@ -23,17 +23,16 @@ class ATitleBar(context: Context, attr: AttributeSet) : FrameLayout(context, att
     fun initView(context: Context, attr: AttributeSet) {
         val inflate = LayoutInflater.from(context).inflate(R.layout.alab_title_bar, this)
 
-        var typeArray = context.obtainStyledAttributes(attr, R.styleable.ATitleBar)
+        val typeArray = context.obtainStyledAttributes(attr, R.styleable.ATitleBar)
 
-        var bgColor = typeArray.getResourceId(R.styleable.ATitleBar_BackgroundColor, R.color.white)
-        var centerText = typeArray.getString(R.styleable.ATitleBar_CenterText)
-        var rightText = typeArray.getString(R.styleable.ATitleBar_RightText)
+        val bgColor = typeArray.getResourceId(R.styleable.ATitleBar_BackgroundColor, R.color.white)
+        val centerText = typeArray.getString(R.styleable.ATitleBar_CenterText)
+        val rightText = typeArray.getString(R.styleable.ATitleBar_RightText)
 
-        var centerTextColor = typeArray.getColor(R.styleable.ATitleBar_CenterTextColor,
+        val centerTextColor = typeArray.getColor(R.styleable.ATitleBar_CenterTextColor,
             resources.getColor(R.color.black))
-        var rightTextColor = typeArray.getColor(R.styleable.ATitleBar_RightTextColor,
+        val rightTextColor = typeArray.getColor(R.styleable.ATitleBar_RightTextColor,
             resources.getColor(R.color.black))
-
 
 
         setCenterText(centerText)
