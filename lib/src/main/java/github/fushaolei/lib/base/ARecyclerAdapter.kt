@@ -36,6 +36,15 @@ abstract class ARecyclerAdapter<T, VH : ARecyclerViewHolder>(var dataList: Mutab
         return onReturnVH(view)
     }
 
+    inline fun <reified VH> createVH(vararg view: Any): VH {
+        val clz = VH::class.java
+        val paramTypes = view.map { it::class.java }.toTypedArray()
+        val mCraetor = clz.getDeclaredConstructor(*paramTypes)
+        mCraetor.isAccessible = true
+        return mCraetor.newInstance(* view)
+
+    }
+
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         convert(holder, dataList[position])
